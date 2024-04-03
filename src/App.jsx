@@ -5,6 +5,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 import particlesOptions from "./particles.json";
 import Home from "./components/Home";
+import NavBar from "./components/NavBar";
 import "./index.css"
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     <div className="part-back">
             {init && <Particles options={particlesOptions} />}
           </div>
+          <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

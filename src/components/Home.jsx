@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-// import ProjectsSection from "./ProjectsSection";
+import ProjectsSection from "./ProjectsSection";
 // import Skills from "./Skills";
 // import Locations from "./Locations";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -78,10 +78,10 @@ const Home = () => {
         <SiPython className="icon-python" />
       </motion.div>
 
-      {/* <div className="proj-home">
+      <div className="proj-home">
         <ProjectsSection />
       </div>
-      <Skills />
+      {/* <Skills />
       <Locations /> */}
     </div>
   );
