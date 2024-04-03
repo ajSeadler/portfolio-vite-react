@@ -7,6 +7,8 @@ import InfoIcon from '@mui/icons-material/Info';
 import WorkIcon from '@mui/icons-material/Work';
 import CodeIcon from '@mui/icons-material/Code';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -58,66 +60,91 @@ function NavBar() {
   const list = () => (
     <List sx={{ padding: '20px', color:'#fff' }}>
       <ListItem
-  button
-  component={NavLink}
-  to="/"
-  onClick={toggleMobileMenu}
-  activeClassName="active-link"
->
-  <ListItemIcon sx={{ color: '#EDDEA4' }}>
-    <HomeIcon />
-  </ListItemIcon>
-  <ListItemText primary="Home" />
-</ListItem>
-<ListItem
-  button
-  component={NavLink}
-  to="/about"
-  onClick={toggleMobileMenu}
-  activeClassName="active-link"
->
-  <ListItemIcon sx={{ color: '#EDDEA4' }}>
-    <InfoIcon />
-  </ListItemIcon>
-  <ListItemText primary="About Me" />
-</ListItem>
-<ListItem
-  button
-  component={NavLink}
-  to="/projects"
-  onClick={toggleMobileMenu}
-  activeClassName="active-link"
->
-  <ListItemIcon sx={{ color: '#EDDEA4' }}>
-    <WorkIcon />
-  </ListItemIcon>
-  <ListItemText primary="Portfolio" />
-</ListItem>
-<ListItem
-  button
-  component={NavLink}
-  to="/skills"
-  onClick={toggleMobileMenu}
-  activeClassName="active-link"
->
-  <ListItemIcon sx={{ color: '#EDDEA4' }}>
-    <CodeIcon />
-  </ListItemIcon>
-  <ListItemText primary="Skills" />
-</ListItem>
-<ListItem
-  button
-  component={NavLink}
-  to="/locations"
-  onClick={toggleMobileMenu}
-  activeClassName="active-link"
->
-  <ListItemIcon sx={{ color: '#EDDEA4' }}>
-    <ContactMailIcon />
-  </ListItemIcon>
-  <ListItemText primary="Contact" />
-</ListItem>
-
+        button
+        component={NavLink}
+        to="/"
+        onClick={toggleMobileMenu}
+        activeclassname="active-link"
+      >
+        <ListItemIcon sx={{ color: '#EDDEA4' }}>
+          <HomeIcon />
+        </ListItemIcon>
+        <ListItemText primary="Home" />
+      </ListItem>
+      <ListItem
+        button
+        component={NavLink}
+        to="/about"
+        onClick={toggleMobileMenu}
+        activeclassname="active-link"
+      >
+        <ListItemIcon sx={{ color: '#EDDEA4' }}>
+          <InfoIcon />
+        </ListItemIcon>
+        <ListItemText primary="About Me" />
+      </ListItem>
+      <ListItem
+        button
+        component={NavLink}
+        to="/portfolio"
+        onClick={toggleMobileMenu}
+        activeclassname="active-link"
+      >
+        <ListItemIcon sx={{ color: '#EDDEA4' }}>
+          <WorkIcon />
+        </ListItemIcon>
+        <ListItemText primary="Portfolio" />
+      </ListItem>
+      <ListItem
+        button
+        component={NavLink}
+        to="/skills"
+        onClick={toggleMobileMenu}
+        activeclassname="active-link"
+      >
+        <ListItemIcon sx={{ color: '#EDDEA4' }}>
+          <CodeIcon />
+        </ListItemIcon>
+        <ListItemText primary="Skills" />
+      </ListItem>
+      <ListItem
+        button
+        component={NavLink}
+        to="/contact"
+        onClick={toggleMobileMenu}
+        activeclassname="active-link"
+      >
+        <ListItemIcon sx={{ color: '#EDDEA4' }}>
+          <ContactMailIcon />
+        </ListItemIcon>
+        <ListItemText primary="Contact" />
+      </ListItem>
+      {/* GitHub */}
+      <ListItem button onClick={toggleMobileMenu}>
+        <a
+          href="https://github.com/ajSeadler"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-link"
+        >
+          <ListItemIcon sx={{ color: '#fff' }}>
+            <GitHubIcon />
+          </ListItemIcon>
+        </a>
+      </ListItem>
+      {/* LinkedIn */}
+      <ListItem button onClick={toggleMobileMenu}>
+        <a
+          href="https://www.linkedin.com/in/anthony-seadler"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-link"
+        >
+          <ListItemIcon sx={{ color: '#0A66C2' }}>
+            <LinkedInIcon />
+          </ListItemIcon>
+        </a>
+      </ListItem>
     </List>
   );
 
@@ -136,22 +163,22 @@ function NavBar() {
         </HideOnScroll>
       )}
       <Drawer
-  anchor="left"
-  open={!isMobile || isMobileMenuOpen}
-  onClose={!isMobile ? undefined : toggleMobileMenu}
-  variant={isMobile ? 'temporary' : 'permanent'}
-  sx={{
-    width: '240px',
-    position: 'absolute', // Position the drawer absolutely
-    zIndex: 10000, // Ensure it appears above the content
-    '& .MuiDrawer-paper': {
-      backgroundColor: 'rgba(255, 255, 255, 0.125)',
-      backdropFilter: 'blur(5px)',
-    },
-  }}
->
-  {list()}
-</Drawer>
+        anchor="left"
+        open={!isMobile || isMobileMenuOpen}
+        onClose={!isMobile ? undefined : toggleMobileMenu}
+        variant={isMobile ? 'temporary' : 'permanent'}
+        sx={{
+          width: '240px',
+          position: 'absolute', // Position the drawer absolutely
+          zIndex: 10000, // Ensure it appears above the content
+          '& .MuiDrawer-paper': {
+            backgroundColor: 'rgba(255, 255, 255, 0.125)',
+            backdropFilter: 'blur(5px)',
+          },
+        }}
+      >
+        {list()}
+      </Drawer>
 
       <Container maxWidth="lg" sx={{ marginLeft: isNavBarVisible ? (isMobileMenuOpen && isMobile ? '240px' : '0') : '-80px', transition: 'transform 0.3s ease' }}>
         

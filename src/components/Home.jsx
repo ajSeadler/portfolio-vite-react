@@ -3,8 +3,8 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import ProjectsSection from "./ProjectsSection";
-// import Skills from "./Skills";
-// import Locations from "./Locations";
+import Skills from "./Skills";
+import Locations from "./Locations";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import { FaJsSquare, FaReact, FaHtml5, FaCss3Alt } from 'react-icons/fa';
@@ -81,8 +81,8 @@ const Home = () => {
       <div className="proj-home">
         <ProjectsSection />
       </div>
-      {/* <Skills />
-      <Locations /> */}
+      <Skills />
+      <Locations />
     </div>
   );
 };
