@@ -8,10 +8,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import projectsData from "../projectsData";
 
-// for screen reader error
+// For screen reader error
 ReactModal.setAppElement("#root");
 
-const ProjectsSection = () => {
+const FeaturedProjects = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   const [showModal, setShowModal] = useState(false);
 
@@ -82,7 +82,12 @@ const ProjectsSection = () => {
                         alt={project.name}
                         onClick={() => toggleModal(project.id)}
                         loading="lazy"
-                        style={{ cursor: "pointer", maxWidth: "70%" }}
+                        style={{
+                          cursor: "pointer",
+                          width: "90%",
+                          margin: "0 auto", // Center the image horizontally
+                          display: "block", // Ensure the image doesn't have extra spacing below
+                        }}
                       />
                     </motion.div>
                   </div>
@@ -97,7 +102,7 @@ const ProjectsSection = () => {
                 overlayClassName="ReactModal__Overlay"
               >
                 <div className="card-body des" style={projectDescriptionStyle}>
-                  <h5 className="card-title" style={{color:'#fff'}}>
+                  <h5 className="card-title" style={{ color: "#fff" }}>
                     {project.name.map((item, index) => (
                       <span key={index}>
                         {typeof item === "string" ? (
@@ -111,9 +116,7 @@ const ProjectsSection = () => {
                     ))}
                   </h5>
 
-                  <p className="card-text">
-                    {project.description}
-                  </p>
+                  <p className="card-text">{project.description}</p>
                   <a
                     href={project.githubLink}
                     target="_blank"
@@ -170,4 +173,4 @@ const ProjectsSection = () => {
   );
 };
 
-export default ProjectsSection;
+export default FeaturedProjects;

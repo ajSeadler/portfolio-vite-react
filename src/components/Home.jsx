@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import ProjectsSection from "./ProjectsSection";
+import FeaturedProjects from "./FeaturedProjects";
 import Skills from "./Skills";
 import Locations from "./Locations";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -79,7 +79,7 @@ const Home = () => {
       </motion.div>
 
       <div className="proj-home">
-        <ProjectsSection />
+        <FeaturedProjects />
       </div>
       <Skills />
       <Locations />
