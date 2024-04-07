@@ -31,7 +31,7 @@ function HideOnScroll({ children }) {
 }
 
 function NavBar() {
-  const isMobile = useMediaQuery('(max-width: 600px)');
+  const isMobile = useMediaQuery('(max-width: 1400px)');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isNavBarVisible, setIsNavBarVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -156,9 +156,19 @@ function NavBar() {
           <IconButton
             color="inherit"
             onClick={toggleMobileMenu}
-            sx={{ position: 'fixed', top: '20px', left: '20px', zIndex: 9999, color:'#fff' }}
+            sx={{ position: 'fixed',
+            top: '20px',
+            left: '20px',
+            zIndex: 9999,
+            borderRadius: '15%',
+            backgroundColor: 'rgba(255, 255, 255, 0.125)',
+            padding: '5px', }}
           >
-            <MenuIcon />
+            <MenuIcon  sx={{
+              padding:'0px',
+              fontSize:'2rem',
+              color:'#fff'
+            }}/>
           </IconButton>
         </HideOnScroll>
       )}

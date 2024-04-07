@@ -21,13 +21,13 @@ const subHeadingStyle = {
   textAlign: 'left',
   marginTop: "20px",
   marginBottom: "10px",
-  marginLeft: "10%",
+  marginLeft: "0%",
 };
 
 
 const paragraphStyle = {
   marginBottom: "10px",
-  width: '70%',
+  width: '100%',
   margin: 'auto',
   textAlign: 'left',
 };

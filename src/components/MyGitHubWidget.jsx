@@ -2,7 +2,7 @@ import React from 'react';
 
 const MyGitHubWidget = () => {
   const githubUsername = 'ajSeadler'; // Replace with your GitHub username
-  const githubStatsUrl = `https://github-readme-stats.vercel.app/api?username=${githubUsername}&hide=stars&theme=gruvbox&show_icons=true&hide_rank=true`;
+  const githubStatsUrl = `https://github-readme-stats.vercel.app/api?username=${githubUsername}&hide=stars&theme=moltack&show_icons=true&hide_rank=true`;
 
 
   return (

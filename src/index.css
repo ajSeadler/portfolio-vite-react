@@ -44,9 +44,8 @@ h3 {
 }
 
 .active-link {
-  color: #90BAAD !important;
+  color: #90baad !important;
 }
-
 
 .custom-divider {
   border-top: 1px solid #fff;
@@ -59,17 +58,16 @@ h3 {
   margin: 0 auto;
 }
 
-
 .icon-js {
-  color: #f7df1e; 
+  color: #f7df1e;
 }
 
 .icon-react {
-  color: #61dafb; 
+  color: #61dafb;
 }
 
 .icon-html {
-  color: #e34f26; 
+  color: #e34f26;
 }
 
 .icon-css {
@@ -83,7 +81,6 @@ h3 {
 .icon-python {
   color: #3776ab;
 }
-
 
 .coding-divider i {
   color: #fff;
@@ -150,15 +147,15 @@ h3 {
 }
 
 .clickable-image:hover {
-  transform: scale(1.05); 
-  transition: transform 0.2s; 
-  cursor: pointer; 
+  transform: scale(1.05);
+  transition: transform 0.2s;
+  cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .card img {
   max-width: 200%;
-  width: 130%;
+  width: 100%;
   height: auto;
 }
 
@@ -184,8 +181,6 @@ h3 {
   cursor: pointer;
   border-radius: 4px;
 }
-
-
 
 .close-button:hover {
   background-color: #45a049;
@@ -238,7 +233,6 @@ h3 {
   color: white;
 }
 
-
 #home {
   margin-top: auto;
   margin-bottom: auto;
@@ -256,8 +250,6 @@ h3 {
 #projects h2 {
   color: white;
 }
-
-
 
 .certificate-container {
   text-align: center;
@@ -286,12 +278,23 @@ h3 {
   text-align: left;
   color: #fff;
   margin: 15px;
+  background-color: rgba(255, 255, 255, 0.125);
+  padding: 20px;
+  margin: 10px;
+  margin-bottom: 2%;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
 }
 
 .contact-section {
-  color:#fff;
+  color: #fff;
   text-align: left;
   margin: 15px;
+  background-color: rgba(255, 255, 255, 0.125);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
 }
 
 .ReactModal__Content {
@@ -316,12 +319,42 @@ h3 {
   color: #000000; /* Change the close button color to white */
 }
 
-.hero {
-  height: 100vh;
+/* Custom modal dialog style */
+.custom-modal-dialog {
+  margin: 0 auto;
+  color: #fff;
+  max-width: 600px; /* Adjust width as needed */
+}
+
+/* Custom modal content style */
+.custom-modal-content {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom modal body style */
+.custom-modal-content .modal-body {
+  color: #fff;
+}
+
+/* Custom modal footer style */
+.custom-modal-content .modal-footer {
+  border-top: none;
+}
+
+/* Custom modal close button style */
+.custom-modal-content .modal-footer .btn-secondary {
+  color: #fff;
+  background-color: #4caf50;
+  border-color: #6c757d;
 }
 
 
-
+.hero {
+  height: 100vh;
+}
 
 .hero2 {
   margin-top: 5%;
@@ -377,14 +410,6 @@ h3 {
   justify-content: flex-end;
 }
 
-.mobile-icon {
-  display: none;
-}
-
-.resume-download button {
-  background-color: white;
-}
-
 .proj-home {
   margin-top: 20%;
 }
@@ -408,7 +433,7 @@ h3 {
 
 .github-stats {
   text-align: left;
-  margin: 15px;
+  margin: 0px;
 }
 
 .github-stats h2 {
@@ -426,7 +451,7 @@ h3 {
 }
 
 .blob {
-  background-image: url('/public/portrait.jpg');
+  background-image: url("/portrait.jpg");
   width: 380px;
   height: 380px;
   background-size: cover;
@@ -439,11 +464,12 @@ h3 {
 }
 
 @keyframes animate {
-  0%, 100%{
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
-  50%{
-      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
 }
 
@@ -455,7 +481,7 @@ h3 {
 }
 
 .blob2 {
-  background-image: url('/public/guitar-pic.jpeg');
+  background-image: url("/guitar-pic.jpeg");
   width: 380px;
   height: 380px;
   background-size: cover;
@@ -468,11 +494,12 @@ h3 {
 }
 
 @keyframes animate {
-  0%, 100%{
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
-  50%{
-      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
 }
 
@@ -496,10 +523,6 @@ h3 {
   animation: bounce 0.5s;
 }
 
-
-
-
-
 @media (max-width: 768px) {
   .blob {
     width: 250px; /* Adjust for smaller screens */
@@ -511,11 +534,6 @@ h3 {
   }
 }
 
-
-
-
-
-
 @media (max-width: 768px) {
   /* Adjust button styles for mobile devices */
   .button-container button {
@@ -523,7 +541,6 @@ h3 {
     padding: 8px 8px;
   }
 }
-
 
 @media (max-width: 768px) {
   .mobile-icon {
@@ -563,27 +580,6 @@ h3 {
     /* background-color: #b1916ede; */
     border-radius: 50%;
   }
-  
-  .swipe-icon {
-    position: relative;
-    margin-top: 15%;
-    margin-bottom: -10%;
-    border-radius: 50%;
-    color: #b1916e;
-    animation: swipeAnimation 2s infinite linear alternate;
-  }
-
-  @keyframes swipeAnimation {
-    0% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(10px);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
 
   .video-container {
     width: 100%;
@@ -604,24 +600,21 @@ h3 {
   .ReactModal__Content {
     width: 95%;
   }
-
- 
 }
 
 @media (max-width: 768px) {
-  .button-container  {
+  .button-container {
     font-size: 1rem;
     padding: 0;
-   
   }
 
   .skills-buttons {
-   width: auto !important;
-   max-width: 85px;
-   margin: 0;
-   display: flex;
-   align-items: center;
-   flex-direction: column;
+    width: auto !important;
+    max-width: 85px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   .blob2 {
@@ -638,7 +631,6 @@ h3 {
   }
 
   .clickable-image img {
-    width: 150px ;
+    width: 150px;
   }
-
 }

@@ -33,7 +33,7 @@ const FeaturedProjects = () => {
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
-    centerPadding: "5%",
+    centerPadding: "0%",
     swipe: true,
     responsive: [
       {
