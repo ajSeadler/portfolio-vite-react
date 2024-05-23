@@ -48,6 +48,7 @@
       "speed": 2,
       "straight": false
     },
+    "fps_limit": 30,
     "number": {
       "density": {
         "enable": true
