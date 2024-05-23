@@ -19,7 +19,7 @@ const projectsData = [
       { icon: FaReact, color: "#61DAFB" },
       { icon: SiHtml5, color: "#E34F26" },
       { icon: FaCss3Alt, color: "#1572B6" }],
-    image: "/fork-it.png",
+    image: "/compressed/fork-it.png",
     description:
       "Fork It is a reviews web app where users can create an account to leave a review for a certain restaurant. Users can rate restaurants, review restaurants, and comment on other users reviews. The app also includes admin user roles, where an admin is able to create, edit, or delete any information in the database. Fork It is a collaborative project between myself and a few others. As a full stack developer, my role consisted of building database tables, building API routes, and building React components. Built with Postgres, Express.js, React.js, and Node.js",
     githubLink: "https://github.com/ajSeadler/Fork-it",
@@ -30,7 +30,7 @@ const projectsData = [
     name: ["Weather or Not: ", { icon: FaPython, color: "#3776AB" },
       { icon: SiHtml5, color: "#E34F26" },
       { icon: FaCss3Alt, color: "#1572B6" }],
-    image: "/weather_app.png",
+    image: "/compressed/weather_app.png",
     description:
       "Weather or Not is a live weather forecasting app built with Python and Flask. The app features a current forecast, followed by a 5 day forecast - obtained from the Open Weather Map API. The users current location's forecast will display on the home page.",
     githubLink: "https://github.com/ajSeadler/Weather-or-Not",
@@ -42,7 +42,7 @@ const projectsData = [
       { icon: FaReact, color: "#61DAFB" },
       { icon: SiHtml5, color: "#E34F26" },
       { icon: FaCss3Alt, color: "#1572B6" }],
-    image: "/bandsitenew.png",
+    image: "/compressed/disco-site-'24.png",
     description:
       "Created a website for the rock band 'Disco Stranger' to enhance their online presence and engage with their audience. Built with React.js and Node.js. This was my first real website! It is a mobile responsive website that showcases the band's music, videos, and upcoming events.",
     githubLink: "https://github.com/ajSeadler/discoband",
@@ -54,7 +54,7 @@ const projectsData = [
       { icon: SiHtml5, color: "#E34F26" },
       { icon: FaReact, color: "#61DAFB" },
       { icon: FaCss3Alt, color: "#1572B6" }],
-    image: "/solar.png",
+    image: "/compressed/solar.png",
     description:
       "Designed and developed a 3D planet viewing website. Users can view 3D models of planets in our solar system and explore their details. The project utilizes Three.js for 3D rendering, React.js, Node.js, Vite, and Material UI.",
     githubLink: "https://github.com/ajSeadler/SolarSystem",
@@ -67,7 +67,7 @@ const projectsData = [
       { icon: SiPostgresql, color: "#336791" },
       { icon: SiHtml5, color: "#E34F26" },
       { icon: FaCss3Alt, color: "#1572B6" }],
-    image: "/realty-min.png",
+    image: "/compressed/realty-min.png",
     description:
       "Stunning Realty is a demo project I created to enhance my PostgreSQL skills. The app features homes for sale or rent, each with a personal real estate agent. Users can favorite homes, view agent info, and even list their own property. Fake data is implemented with Faker.js to give a more realistic demo. Built with Postgres, Express.js, React.js, and Node.js",
     githubLink: "https://github.com/ajSeadler/realty",

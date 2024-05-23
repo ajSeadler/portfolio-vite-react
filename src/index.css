@@ -493,6 +493,39 @@ h3 {
   border-radius: 50%; /* Ensure the blob is circular */
 }
 
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #56494E; /* Set background color to navy blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.spinner {
+  
+  width: 50px; /* Adjust the size of the spinner as needed */
+  height: 50px;
+  border: 4px solid rgba(255, 255, 0, 0.5); /* Faded yellow color */
+  border-top: 4px solid #ffffff; /* White color for spinner */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 @keyframes animate {
   0%,
   100% {
@@ -633,4 +666,13 @@ h3 {
   .clickable-image img {
     width: 150px;
   }
+
+  
+    .modal-dialog {
+      max-width: 80%;
+      max-height: 50vh;
+      margin: 1.75rem auto;
+    
+  }
+  
 }
